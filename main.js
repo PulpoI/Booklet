@@ -18,7 +18,7 @@ let pais = "Argentina";
 let carnet = "Datos de " + nombreYApellido + ": DNI: " + documento + " DIRECCION: " + direccion + " PAIS: " + pais; 
 
 //actividad 4
-/*
+
 let padre = prompt("Nombre del padre?");
 let madre = prompt("Nombre de la madre?");
 let hijo = prompt("Nombre d20el hijo?");
@@ -26,14 +26,14 @@ let hija = prompt("Nombre de la hija?");
 let abuelo = prompt("Nombre del abuelo?");
 let familia = "Nombres de la familia: " + padre + ", " + madre + ", " + hijo + ", " + hija + ", " + abuelo + ".";
 alert(familia);
-*/
+
 
 //actividad 5
-/*
+
 let precio = parseFloat(prompt("Ingrese precio"))
 let descuento20 = precio - (precio * 0.2);
 alert("El precio con descuento del 20% es " + descuento20);
-*/
+
 
 //Calculadora de porcentajes
 let numero = parseFloat(prompt("Ingresa el numero"));
