@@ -1,57 +1,67 @@
-//Booklet 2 actividad 1
+//Actividad clase 3 
 
-//1
-let ingresaNombre = prompt("Ingresa un nombre")
-let nombre = "PABLO"
-if (ingresaNombre.toUpperCase() == nombre){
-    alert("Fui yo")
-}else{
-    alert("No fui yo")
-}
+// 1 - El pizarron
 
-//2
-let letra = prompt("Presiona una tecla");
-if(letra.toUpperCase() == "Y"){
-    alert("Correcto");
-}else{
-    alert("Error")
-}
+// numeroPizarron = parseInt(prompt("Ingresa la cantidad de veces que queres que aparezca tu mensaje:"));
 
-//3
-let numero = parseInt(prompt("Escribe un numero del 1 al 4"));
-let homero = 1;
-let marge = 2;
-let bart = 3;
-let lisa = 4; 
-if(numero == 1){
-    alert("Elegiste a Homero")
-}else if(numero == 2){
-    alert("Elegiste a Marge")
-}else if(numero == 3){
-    alert("Elegiste a Bart")
-}else if(numero == 4){
-    alert("Elegiste a Lisa")
-}else{
-    alert("Error")
-}
+// while (numeroPizarron == null || numeroPizarron == "" || isNaN(numeroPizarron) || numeroPizarron <= 0) {
+//     numeroPizarron = parseInt(prompt("Ingresa la cantidad de veces que queres que aparezca tu mensaje:"));
+// }
 
-//4 
-let numeroPresu = parseInt(prompt("Ingresa el total del presupuesto"))
-if(numeroPresu <= 1000){
-    alert("Presupuesto bajo")
-}else if(numeroPresu > 1000 && numeroPresu <= 3000){
-    alert("Presupuesto medio")
-}else{
-    alert("Presupuesto alto")
-}
+// textoPizarron  = prompt("Ingresa el texto");
 
-//5
-let producto1 = prompt("Ingrese producto 1")
-let producto2 = prompt("Ingrese producto 2")
-let producto3 = prompt("Ingrese producto 3")
-let producto4 = prompt("Ingrese producto 4")
-if(producto1 != "" && producto2 != "" && producto3 != "" && producto4 != ""){
-    alert("Su pedido es: " + producto1 + ", " + producto2 + ", " + producto3 + " y " + producto4 + ".")
-}else{
-    alert("Error: Es necesario cargar todos los productos")
+// for (let i = 1; i <= numeroPizarron; i++){
+//     console.log(i + " " + textoPizarron);
+// }
+
+
+// 2 - Cuadrado ordinario
+
+// let lados = prompt("Ingresar cantidad de lados")
+// for (let i = 1; i <= lados; i++){
+//     if (i >= 5){
+//         break;
+//     }
+//     alert("lado" + " "  + i);
+// }
+
+// 3 - Registro de alumnos 
+
+// let alumnos = "";
+// for (let i = 0; i < 10; i++){
+//     alumnos += prompt("Ingresa el nombre del alumnos") + "\n";   
+// }
+
+// alert (alumnos);
+
+//  4 - El innombrable 
+// let nombre = prompt("Ingresa un personaje");
+// let lista = "";
+// while (nombre != "Voldemort") {
+//     lista += nombre + "\n";
+//     nombre = prompt("Ingresa un personaje");
+// }
+// alert(lista)
+
+// 5 - Comprando productos
+let entrada = prompt("Seleccionar productos 1 - 4. Escriba ESC para terminar")
+while (entrada != "ESC") {
+    switch (entrada) {
+        case "1":
+            alert("Tomate");
+            break;
+        case "2":
+            alert("Papa");
+            break;
+        case "3": 
+            alert("Pollo");
+            break;
+        case "4": 
+            alert("Carne");
+            break;
+        default:
+            alert("Error");
+            break;
+    }
+    entrada = prompt("Seleccionar productos 1 - 4")
 }
