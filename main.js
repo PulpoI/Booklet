@@ -1,67 +1,30 @@
-//Actividad clase 3 
+// Actividad 4 
 
-// 1 - El pizarron
+// 1 - Entradas y salidas 
 
-// numeroPizarron = parseInt(prompt("Ingresa la cantidad de veces que queres que aparezca tu mensaje:"));
-
-// while (numeroPizarron == null || numeroPizarron == "" || isNaN(numeroPizarron) || numeroPizarron <= 0) {
-//     numeroPizarron = parseInt(prompt("Ingresa la cantidad de veces que queres que aparezca tu mensaje:"));
+// function entrada() {
+//     let valor = parseInt(prompt("Ingresa el valor total"));    
+//     return valor;
 // }
+// let entradaValor = entrada();
+// alert(entradaValor)
 
-// textoPizarron  = prompt("Ingresa el texto");
 
-// for (let i = 1; i <= numeroPizarron; i++){
-//     console.log(i + " " + textoPizarron);
+// function procesamiento(numero1, numero2) {
+//     return numero1 + numero2;
 // }
+// let resultado = procesamiento(2, 3)
+// console.log(resultado)
 
-
-// 2 - Cuadrado ordinario
-
-// let lados = prompt("Ingresar cantidad de lados")
-// for (let i = 1; i <= lados; i++){
-//     if (i >= 5){
-//         break;
-//     }
-//     alert("lado" + " "  + i);
+// function salida(nombre, apellido) {
+//     return nombre + " " + apellido;
 // }
+// let nombreCompleto = salida("Pablo", "Duarte")
+// console.log(nombreCompleto)
 
-// 3 - Registro de alumnos 
 
-// let alumnos = "";
-// for (let i = 0; i < 10; i++){
-//     alumnos += prompt("Ingresa el nombre del alumnos") + "\n";   
-// }
-
-// alert (alumnos);
-
-//  4 - El innombrable 
-// let nombre = prompt("Ingresa un personaje");
-// let lista = "";
-// while (nombre != "Voldemort") {
-//     lista += nombre + "\n";
-//     nombre = prompt("Ingresa un personaje");
-// }
-// alert(lista)
-
-// 5 - Comprando productos
-let entrada = prompt("Seleccionar productos 1 - 4. Escriba ESC para terminar")
-while (entrada != "ESC") {
-    switch (entrada) {
-        case "1":
-            alert("Tomate");
-            break;
-        case "2":
-            alert("Papa");
-            break;
-        case "3": 
-            alert("Pollo");
-            break;
-        case "4": 
-            alert("Carne");
-            break;
-        default:
-            alert("Error");
-            break;
-    }
-    entrada = prompt("Seleccionar productos 1 - 4")
+function sumar(n1, n2, n3) {
+    return n1 + n2 + n3;
 }
+
+console.log(sumar (3, 5, 0))
